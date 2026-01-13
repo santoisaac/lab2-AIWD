@@ -1,0 +1,128 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+color:white;
+}
+
+header{
+background:black;
+text-align:center;
+padding:30px;
+}
+
+header h1{
+font-size:40px;
+letter-spacing:3px;
+color:cyan;
+}
+
+header p{
+margin-top:10px;
+}
+
+.container{
+max-width:1100px;
+margin:40px auto;
+padding:20px;
+background:rgba(0,0,0,0.7);
+border-radius:20px;
+}
+
+/* FLEXBOX LAYOUT */
+.media-form{
+display:flex;
+gap:30px;
+}
+
+/* MEDIA SECTION */
+.media{
+flex:1;
+}
+.media img{
+width:100%;
+border-radius:15px;
+margin-bottom:15px;
+box-shadow:0 0 20px cyan;
+}
+.media video{
+width:100%;
+border-radius:15px;
+box-shadow:0 0 20px black;
+}
+
+/* FORM */
+form{
+flex:1;
+background:rgba(0,0,0,0.8);
+padding:30px;
+border-radius:15px;
+}
+
+form h2{
+text-align:center;
+margin-bottom:20px;
+color:cyan;
+}
+
+label{
+display:block;
+margin-top:15px;
+}
+
+input, select, textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:none;
+border-radius:8px;
+outline:none;
+background:#111;
+color:white;
+}
+
+/* TRANSITIONS */
+input, select, textarea{
+transition:0.3s;
+}
+
+input:focus, textarea:focus, select:focus{
+box-shadow:0 0 10px cyan;
+transform:scale(1.03);
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"]{
+background:cyan;
+color:black;
+margin-top:20px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+input[type="submit"]:hover{
+background:white;
+transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+background:black;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* MEDIA QUERY */
+@media(max-width:900px){
+.media-form{
+flex-direction:column;
+}
+}
